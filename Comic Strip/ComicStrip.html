@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comic Strip - Collage</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background: red;
+		}
+
+		.container {
+			background: black;
+			min-height: 100vh;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
+			grid-template-areas: 
+				"p1 p2 p3 p4"
+				"p1 p2 p6 p4"
+				"p5 p2 p6 p4"
+				"p5 p2 p6 p7"
+				"p5 p9 p10 p7"
+				"p8 p9 p10 p7"
+				"p8 p9 p11 p7";
+			grid-gap: 10px;
+			padding: 10px;
+		}
+
+		.item {
+			background: blue;
+			min-height: 100px;
+			min-width: 100px;
+		}
+
+		#photo1 {
+			grid-area: p1;
+			background: url(image1.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo2 {
+			grid-area: p2;
+			background: url(image2.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo3 {
+			grid-area: p3;
+			background: url(image3.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo4 {
+			grid-area: p4;
+			background: url(image4.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo5 {
+			grid-area: p5;
+			background: url(image5.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo6 {
+			grid-area: p6;
+			background: url(image6.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		#photo7 {
+			grid-area: p7;
+			background: url(image7.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		#photo8 {
+			grid-area: p8;
+			background: url(image8.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		#photo9 {
+			grid-area: p9;
+			background: url(image9.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		#photo10 {
+			grid-area: p10;
+			background: url(image10.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		#photo11 {
+			grid-area: p11;
+			background: url(image11.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<div class="item" id="photo1">
+		</div>
+
+		<div class="item" id="photo2">
+		</div>
+
+		<div class="item" id="photo3">
+		</div>
+
+		<div class="item" id="photo4">
+		</div>
+
+		<div class="item" id="photo5">
+		</div>
+
+		<div class="item" id="photo6">
+		</div>
+
+		<div class="item" id="photo7">
+		</div>
+
+		<div class="item" id="photo8">
+		</div>
+
+		<div class="item" id="photo9">
+		</div>
+
+		<div class="item" id="photo10">
+		</div>
+
+		<div class="item" id="photo11">
+		</div>
+
+	</div>
+
+</body>
+</html>
